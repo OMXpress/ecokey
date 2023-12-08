@@ -6,7 +6,11 @@
         padding: 0;
         box-sizing: border-box;
         font-family: 'Poppins', sans-serif;
+        
     }
+    /* body{
+        background-color: #bbbbbb !important;
+    } */
 
     /* navbar and video */
     .hero {
@@ -88,6 +92,87 @@
         object-fit: cover;
         z-index: -1;
     }
+/* service */
+.special-heading {
+    color: #987952;
+    font-size: 100px;
+    text-align: center;
+    font: 800;
+    letter-spacing: -3px;
+    font-weight: 800;
+    margin-top: 20;
+    letter-spacing: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+.grid-container {
+    display: grid;
+    /* padding-top: 200px; */
+    padding-bottom: 150px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.line::after{
+        content: "";
+        display: block;
+        position:relative;
+        left: 50%;
+        bottom: 0;
+        top: 10%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        /* transition: width 0.5s ease; */
+}
+.description h2 ,.oneh ,.twoh ,.threeh ,.fourh{
+    margin: 20px;
+}
+.description p ,.onep ,.twop ,.threep ,.fourp {
+    margin: 25px;
+    margin-top: 0%;
+}
+
+.grid-item:hover .description {
+    opacity: 1;
+}
+
+.grid-item:hover .description h2,
+.grid-item:hover .description p {
+    transform: translateX(0); 
+}
+
+
     /* footer */
     .container{
         max-width: 1170px;
@@ -192,6 +277,21 @@
             display: block;
             width: 100px;
         }
+        .special-heading{
+            font-size: 40px;
+        }
+        .grid-container{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .oneh ,.onep{
+            font-size: xx-small;
+        }
+        .twoh ,.twop ,.threeh ,.threep{
+            font-size: 50%;
+        }
+        .fourh ,.fourp{
+            font-size: 45%;
+        }
         
     }
     @media(max-width: 574px){
@@ -217,6 +317,23 @@
             display: block;
             width: 80px;
         }
+        .special-heading{
+            font-size: 40px;
+        }
+        .grid-container{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .oneh ,.onep{
+            font-size: xx-small;
+        }
+        .twoh ,.twop ,.threeh ,.threep{
+            font-size: 50%;
+        }
+        .fourh ,.fourp{
+            font-size: 45%;
+        }
+        
+
     }
     @media(max-width: 420px){    
         .footer-col{
@@ -244,24 +361,22 @@
             display: block;
             width: 70px;
         }
+        .special-heading{
+            font-size: 40px;
+        }
+        .grid-container{
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .oneh ,.onep{
+            font-size: xx-small;
+        }
+        .twoh ,.twop ,.threeh ,.threep{
+            font-size: 50%;
+        }
+        .fourh ,.fourp{
+            font-size: 45%;
+        }
+        
+
     }
-    /* @media(max-width: 420px){
-        .footer-col{
-            width: 100%;
-            text-align: center;
-        }
-        .footer-col h4::before{
-            left: auto;
-        }
-        .back-video{
-            height: 50vh;
-            width: 100%;
-        }
-        .hero{
-            width: 100%;
-        }
-        nav .logo{
-            width: 300px;
-            margin-left:0;
-        }
-    } */
+    
