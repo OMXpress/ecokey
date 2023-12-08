@@ -1,0 +1,143 @@
+@import url(https://db.onlinewebfonts.com/c/4fdca598434885f33f83ffdb03d1c5e7?family=CoconNextArabic-Light);
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes revealTextFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes revealTextFromRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@font-face {
+    font-family: "CoconNextArabic-Light";
+    src: url("https://db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.eot");
+    src: url("https://db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/4fdca598434885f33f83ffdb03d1c5e7.svg#CoconNextArabic-Light")format("svg");
+}
+.services-section {
+    text-align: left;
+}
+.section {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    /* animation: slideInFromBottom 1s ease-out; */
+}
+.section img {
+    width: 50%;
+    opacity: 0;
+}
+.section .text-first {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    opacity: 0;
+    /* animation: revealTextFromRight 0.5s ease-out forwards; */
+    /* animation-delay: 1s;  */
+    font-size: 30px;
+}
+.section .text-second {
+    flex: 1;
+    padding: 40px;
+    box-sizing: border-box;
+    opacity: 0;
+    /* animation: revealTextFromLeft 0.5s ease-out forwards; */
+    /* animation-delay: 1s;  */
+    font-size: 30px;
+}
+.section h1 {
+    margin: 0;
+    color: #0a234e;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.reveal-paragraph p {
+    color: #f7941d;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    font-family: "CoconNextArabic-Light";
+}
+
+[data-reveal] {
+    opacity: 0;
+    transition: 0.75s ease;
+  }
+  
+  [data-reveal="top"] { transform: translateY(-30px); }
+  
+  [data-reveal="bottom"] { transform: translateY(30px); }
+  
+  [data-reveal="left"] { transform: translateX(-30px); }
+  
+  [data-reveal="right"] { transform: translateX(30px); }
+  
+  [data-reveal].revealed {
+    transform: translate(0);
+    opacity: 1;
+  }
+.text-first,
+.text-second {
+  flex: 1;
+}
+
+.first-img,
+.second-img {
+  flex: 1;
+  max-width: 100%;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+    .section {
+      flex-direction: column;
+    }
+
+    
+    .first-img,
+    .second-img {
+      order: 1;
+      margin-top: 20px; /* Add space between image and text */
+    }
+  }
