@@ -93,7 +93,7 @@
         z-index: -1;
     }
 /* service */
-.special-heading {
+.special-heading-service {
     color: #987952;
     font-size: 100px;
     text-align: center;
@@ -108,7 +108,8 @@
 
 .grid-container {
     display: grid;
-    /* padding-top: 200px; */
+    padding-left: 200px;
+    padding-right: 200px;
     padding-bottom: 150px;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -124,7 +125,19 @@ img {
     height: auto;
     display: block;
 }
-
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size:x-large;
+    color: #ffffff;
+    background-color:rgba(38,33,33,.7);
+    padding: 15px;
+    opacity: 1;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
 .description {
     position: absolute;
     top: 0;
@@ -277,23 +290,28 @@ img {
             display: block;
             width: 100px;
         }
-        .special-heading{
+        .special-heading-service{
             font-size: 40px;
         }
         .grid-container{
             grid-template-columns: repeat(1, 1fr);
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .centered{
+            font-size: 100%;
         }
         .oneh ,.onep{
-            font-size: xx-small;
+            font-size: 70%;
         }
         .twoh ,.twop ,.threeh ,.threep{
-            font-size: 50%;
+            font-size: 60%;
         }
         .fourh ,.fourp{
-            font-size: 45%;
+            font-size: 60%;
         }
         
-    }
+}
     @media(max-width: 574px){
         .footer-col{
             width: 100%;
@@ -317,20 +335,25 @@ img {
             display: block;
             width: 80px;
         }
-        .special-heading{
+        .special-heading-service{
             font-size: 40px;
         }
         .grid-container{
             grid-template-columns: repeat(1, 1fr);
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .centered{
+            font-size: 100%;
         }
         .oneh ,.onep{
-            font-size: xx-small;
+            font-size: 70%;
         }
         .twoh ,.twop ,.threeh ,.threep{
-            font-size: 50%;
+            font-size: 60%;
         }
         .fourh ,.fourp{
-            font-size: 45%;
+            font-size: 60%;
         }
         
 
@@ -361,22 +384,24 @@ img {
             display: block;
             width: 70px;
         }
-        .special-heading{
+        .special-heading-service{
             font-size: 40px;
         }
         .grid-container{
             grid-template-columns: repeat(1, 1fr);
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .centered{
+            font-size: 100%;
         }
         .oneh ,.onep{
-            font-size: xx-small;
+            font-size: 70%;
         }
         .twoh ,.twop ,.threeh ,.threep{
-            font-size: 50%;
+            font-size: 60%;
         }
         .fourh ,.fourp{
-            font-size: 45%;
-        }
-        
-
-    }
-    
+            font-size: 60%;
+        }       
+}

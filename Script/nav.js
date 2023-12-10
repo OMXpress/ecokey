@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     var nav = document.querySelector('nav');
     var heroSection = document.querySelector('.hero');
-    var serviceSection = document.querySelector('.service'); // Replace with the appropriate selector for your target section
+    var serviceSection = document.querySelector('.special-heading-service'); // Replace with the appropriate selector for your target section
 
     // Calculate the offset for the next section
     var nextSectionOffset = serviceSection.offsetTop;
