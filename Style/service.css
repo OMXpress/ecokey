@@ -47,12 +47,13 @@
         display: none;
     }
     nav ul {
-        padding-right: 3%;
+        /* padding-right: 3%; */
+        gap: 20px;
     }
     nav ul li {
         list-style: none;
         display: inline-block;
-        margin-left: 40px;
+        /* margin-left: 40px; */
     }
     nav a {
         text-decoration: none;
@@ -105,16 +106,17 @@
 
 .grid-container {
     display: grid;
-    padding-left: 200px;
-    padding-right: 200px;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    justify-items: center;
+    
 }
 #last_grid{
     padding-bottom: 150px;  
 }
 
 .grid-item {
+    width: 80%;
+    height: 80%;
+    /* position: absolute; */
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -142,22 +144,7 @@ img {
     text-align: center;
     transition: opacity 0.3s ease-in-out;
 }
-.description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-} */
+*/
 .centered {
     position: absolute;
     top: 50%;
@@ -177,22 +164,7 @@ img {
     -webkit-filter: brightness(0.75);
   filter: brightness(0.75);
 }
-.description {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.7);
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
+
 .line::after{
         content: "";
         display: block;
@@ -206,23 +178,7 @@ img {
         background-color: white;
         /* transition: width 0.5s ease; */
 }
-.description h2 ,.oneh ,.twoh ,.threeh ,.fourh{
-    margin: 20px;
-}
-.description p ,.onep ,.twop ,.threep ,.fourp {
-    margin: 25px;
-    margin-top: 0%;
-}
 
-.grid-item:hover .description {
-    opacity: 1;
-}
-
-.grid-item:hover .description h2,
-.grid-item:hover .description p {
-    transform: translateX(0); 
-}
- 
 /* footer */
     .container{
         max-width: 1170px;

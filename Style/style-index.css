@@ -50,12 +50,14 @@
         display: none;
     }
     nav ul {
-        padding-right: 3%;
+        /* padding-right: 3%; */
+        gap: 10px;
     }
     nav ul li {
         list-style: none;
         display: inline-block;
-        margin-left: 40px;
+        /* gap: 1000px; */
+        /* margin-left: 40px; */
     }
     nav a {
         text-decoration: none;
@@ -403,57 +405,6 @@ img {
     gap: 28px;
 }
 
-@media (max-width: 991px) {
-    .about-us {
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
-    .about-us .content h2 {
-        font-size: 3rem;
-    }
-    .about-us .content p {
-        max-width: 62%;
-        font-size: 13px;
-    }
-    .other-info {
-        flex-direction: column;
-        max-width:100%
-    }
-    .other-info .our-vision{
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    .other-info .our-mission {
-        flex-direction: column;
-        width: 100%;
-        margin: auto;
-        margin-bottom: 10px;
-    }
-    .other-info .our-vision .our-vision-heading {
-        font-size: 3rem;
-    }
-    .other-info .our-vision .our-vision-para {
-        max-width: 62%;
-        font-size: 13px;
-    }
-    .other-info .our-mission .our-mission-heading {
-        font-size: 3rem;
-    }
-    .other-info .our-mission .our-mission-para {
-        max-width: 62%;
-        font-size: 13px;
-    }
-    .other-info .our-mission .content ul {
-        list-style-type: none;
-        font-size: 13px;
-    }
-    .special-heading-about-us{
-        font-size: 40px;
-    }
-}
-
 /* contact us */
 
 .contact-in{
@@ -605,6 +556,101 @@ img {
         color: #987952;
     }
     /* responsive */
+    @media (max-width: 1400px) {
+        .special-heading-service{
+            font-size: 100px;
+        }
+        .centered{
+            font-size: 60px;
+        }
+        .grid-container{
+            cursor: pointer;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 40px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .oneh ,.onep{
+            font-size: 40px;
+        }
+        .twoh ,.twop ,.threeh ,.threep{
+            font-size: 35px;
+        }
+        .fourh ,.fourp{
+            font-size: 35px;
+        }
+        .special-heading-about-us{
+            font-size: 100px !important ;
+        }
+    }
+    @media (max-width: 1050px) {
+        .special-heading-service{
+            font-size: 80px;
+        }
+        .centered{
+            font-size: 40px;
+        }
+        .grid-container{
+            cursor: pointer;
+            grid-template-columns: repeat(1, 1fr);
+            gap: 30px;
+            padding-left: 0;
+            padding-right: 0;
+        }
+        .special-heading-about-us{
+            font-size: 80px !important ;
+        }
+    }
+    @media (max-width: 991px) {
+        .about-us {
+            flex-direction: column;
+            margin-bottom: 10px;
+        }
+        .about-us .content h2 {
+            font-size: 3rem;
+        }
+        .about-us .content p {
+            max-width: 62%;
+            font-size: 13px;
+        }
+        .other-info {
+            flex-direction: column;
+            max-width:100%
+        }
+        .other-info .our-vision{
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .other-info .our-mission {
+            flex-direction: column;
+            width: 100%;
+            margin: auto;
+            margin-bottom: 10px;
+        }
+        .other-info .our-vision .our-vision-heading {
+            font-size: 3rem;
+        }
+        .other-info .our-vision .our-vision-para {
+            max-width: 62%;
+            font-size: 13px;
+        }
+        .other-info .our-mission .our-mission-heading {
+            font-size: 3rem;
+        }
+        .other-info .our-mission .our-mission-para {
+            max-width: 62%;
+            font-size: 13px;
+        }
+        .other-info .our-mission .content ul {
+            list-style-type: none;
+            font-size: 13px;
+        }
+        .special-heading-about-us{
+            font-size: 40px;
+        }
+    }
     @media(max-width: 767px){
         .footer-col{
             width: 50%;
