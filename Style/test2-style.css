@@ -1,0 +1,142 @@
+/* #cards{
+    margin-top: 0;
+} */
+.social-icons2 {
+    display: flex;
+    gap: 1em; 
+    justify-content: center; 
+    margin-top: 1em;
+    margin-bottom: 20px; 
+}
+
+.social-icons2 a {
+    font-size: 1.5em; 
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.1em;
+    padding-top: 0.2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.social-icons2 a:nth-child(1) {
+color: #e62144; /* Facebook color on hover */
+}
+
+.social-icons2 a:nth-child(2) {
+color: #e62144; /* Instagram color on hover */
+}
+
+.social-icons2 a:nth-child(3) {
+color: #e62144; /* Twitter color on hover */
+}
+
+.social-icons2 a:nth-child(4) {
+color: #e62144; /* Snapchat color on hover */
+}
+
+.social-icons2 a:nth-child(5) {
+color: #e62144; /* TikTok color on hover */
+}
+
+.social-icons2 a:nth-child(6) {
+color: #e62144; /* Example website color on hover */
+}
+.social-icons2 a:hover {
+transform: scale(1.2);
+color: #007bff;
+}
+.social-icons-art {
+    display: flex;
+    gap: 1em; 
+    justify-content: center; 
+    margin-top: 1em;
+    margin-bottom: 20px; 
+}
+
+.social-icons-art a {
+    font-size: 1.5em; 
+    cursor: pointer;
+    border-radius: 50%;
+    padding: 0.1em;
+    padding-top: 0.2em;
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+.social-icons-art a:nth-child(1) {
+color: #64ccc5; /* Facebook color on hover */
+}
+
+.social-icons-art a:nth-child(2) {
+color: #64ccc5; /* Instagram color on hover */
+}
+
+.social-icons-art a:nth-child(3) {
+color: #64ccc5; /* Twitter color on hover */
+}
+
+.social-icons-art a:nth-child(4) {
+color: #64ccc5; /* Snapchat color on hover */
+}
+
+.social-icons-art a:nth-child(5) {
+color: #64ccc5; /* TikTok color on hover */
+}
+
+.social-icons-art a:nth-child(6) {
+color: #64ccc5; /* Example website color on hover */
+}
+.social-icons-art a:hover {
+transform: scale(1.2);
+color: #007bff;
+}
+
+.card-container {
+position: relative;
+width: 22rem;
+height: 33.5rem;
+}
+
+.card {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+opacity: 0;
+transform: translateY(20px);
+transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Add background-color to the transition */
+background-color: #f1f1f1; /* Set the initial background color */
+}
+
+.card .card-content {
+position: relative;
+background-color: #fff; /* Set background color for the content area */
+overflow: hidden;
+}
+
+.card.active {
+opacity: 1;
+transform: translateY(0);
+background-color: #f1f1f1; /* Set the background color on hover */
+}
+
+.card img {
+    margin: 40px auto 20px auto;
+    max-width: 100%;
+    height: auto;
+}
+.card-img-top-landing{
+    margin-top: 20%;
+}
+.card-title{
+    font-size: 30px;
+    font-weight: 600;
+    text-align: center;
+}
+.card-text{
+    text-align: center;
+}

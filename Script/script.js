@@ -41,8 +41,21 @@ window.onscroll = function onScroll() {
             titleThree.style.opacity = 0;
 
         }
+    }
+    function onScrollfour() {
+        let card1 = document.getElementById("card1");
+        if (window.scrollY >= ourMission.offsetTop - 200) {   
+            let overlay = document.getElementById("overlay-4");
+            let titleThree = document.getElementById("title-4")
+            overlay.style.bottom = 0;
+            overlay.style.opacity = 1;
+            titleThree.style.opacity = 0;
+
+        }
     }    
     onScrollOne();
     onScrollTwo();
     onScrollThree();
+    onScrollfour();
 }
+

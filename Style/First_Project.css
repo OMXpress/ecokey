@@ -1,0 +1,127 @@
+/* body {
+    padding: 20px;
+  } */
+  #title {
+    margin-top: 20px;
+  }
+.project{
+    display: flex;
+    flex-wrap: wrap;
+}
+#carouselExampleControls{
+    flex: 60%;
+    border-radius: 10px;
+}
+#discription{
+    flex: 40%;
+}
+  /* Customize the shape and color of the carousel control arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+background-color: transparent;
+border-radius: 50%; /* Make the arrows circular */
+padding: 20px; /* Increase the padding for a larger arrow */
+}
+
+/* Optionally, you can customize the color of the arrow borders */
+.carousel-control-prev,
+.carousel-control-next {
+background-color: transparent;
+    border-color: transparent;
+    height: 60%;
+    opacity: 0.2;
+}
+
+/* Adjust the width of the carousel container */
+#photo-slider {
+width: 100%; /* Adjust as needed */
+margin: auto; /* Center the carousel */
+
+}
+  /* Vertical Navbar on the Right */
+  .sidebar {
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 200px;
+    background-color: #f8f9fa; /* Light gray background color */
+    border-left: 1px solid #e1e4e8; /* Border color */
+    padding-top: 20px;
+  }
+  .sidebar .nav-link {
+    padding: 10px;
+  }
+  
+  .navbar-nav .nav-item.dropdown:hover .dropdown-menu {
+  background-color: black; /* Change this to the color you want */
+}
+
+.carousel-inner {
+  transition: transform 0.5s ease-in-out;
+  border-radius: 10px
+}
+
+/* Additional styles for the content container and thumbnail slider */
+.container-content {
+  text-align: center;
+  margin-top: 20px;
+  
+}
+
+#thumbnail-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.thumbnail-item {
+  flex: 0 0 auto;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.thumbnail-item img {
+  width: 150px;
+  height: 80px;
+  border: 2px solid #dee2e6;
+  border-radius: 5px;
+  transition: border 0.3s ease-in-out;
+}
+
+.thumbnail-item img:hover {
+  border: 2px solid #007bff;
+}
+
+
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+}
+#navvv {
+  background-color: #0d0c0d;
+  padding: 10px;
+  margin-top: 20px;
+  margin: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link2 {
+  color: #987952 ;
+  text-decoration: none !important;
+  padding: 10px;
+}
+.nav-link2:hover{
+  color: white;
+}
+
+.dropdown-menu {
+  background-color: white ;
+  border: 1px solid #343a40;
+}
